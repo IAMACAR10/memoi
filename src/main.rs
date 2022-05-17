@@ -2,10 +2,11 @@ use rand::Rng;
 use text_io::read;
 
 fn main() {
-    println!("Welcome! Please select an excercise: \n1. Multiplication");
+    println!("Welcome! Please select an excercise: \n1. Multiplication\n2. ????????");
     let test:u8 = read!();
     match test{
         1 => multiply(),
+        2 => println!("lmao you thought"),
         _ => println!("Please select an excercise :)"),
     }
 }
@@ -20,6 +21,10 @@ fn multiply() {
         let num:u32 = a * b;
         println!("Multiply {} with {}", a, b);
         let answer:u32 = read!();
+        if answer == 69420
+        {
+            println!("nice");
+        }
         if answer == num{
             combo += 1;
         } else{
